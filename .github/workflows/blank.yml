@@ -28,10 +28,9 @@ jobs:
         with:
           python-version: '3.8'
           
-      - name: install requirements and run tests
+      - name: install requirements
         run: |
           pip install -r requirements.txt
-          pip install zappa
       
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1

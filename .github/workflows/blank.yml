@@ -31,7 +31,8 @@ jobs:
       - name: install requirements and run tests
         run: |
           pip install -r requirements.txt
-          
+          pip install zappa
+      
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -42,5 +43,4 @@ jobs:
 
       - name: zappa
         run: |
-          zappa deploy dev
-          zappa update dev
+          zappa update

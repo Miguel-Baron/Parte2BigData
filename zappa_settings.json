@@ -7,7 +7,7 @@
         "profile_name": "default",
         "manage_roles": false,
         "apigateway_enabled": false,
-        "project_name": "DolaresRaw",
+        "project_name": "Dolares",
         "runtime": "python3.8",
         "s3_bucket": "zappa-s1ik41n2e",
         

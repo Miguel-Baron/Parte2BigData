@@ -31,6 +31,7 @@ jobs:
       - name: install requirements
         working-directory: web/e2e
         run: |
+          pip install -r requirements.txt
           npm ci
           npx cypress verify
           npx cypress info
@@ -41,7 +42,6 @@ jobs:
           npx cypress version --component node
           cd cypress
           ls -lrt
-          pip install -r requirements.txt
       - name: Cypress run
     # uses: cypress-io/github-action@v2
         working-directory: web/e2e

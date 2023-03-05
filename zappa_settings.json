@@ -9,7 +9,8 @@
         "apigateway_enabled": false,
         "project_name": "Dolar2",
         "runtime": "python3.8",
-        "s3_bucket": "zappa-bimy9kj5q"
+        "s3_bucket": "zappa-bimy9kj5q",
+        "lambda_description": "aws:states:opt-out",
         "events": [{
             "function": "apps.f",
             "event_source": {

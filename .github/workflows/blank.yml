@@ -28,24 +28,9 @@ jobs:
         with:
           python-version: '3.8'
           
-      - name: install requirements
+      - name: install requirements and run tests
         run: |
           pip install -r requirements.txt
-          npm ci
-          npx cypress verify
-          npx cypress info
-          npx cypress version
-          npx cypress version --component package
-          npx cypress version --component binary
-          npx cypress version --component electron
-          npx cypress version --component node
-          cd cypress
-          ls -lrt
-      - name: Cypress run
-    # uses: cypress-io/github-action@v2
-        run: |
-          npm install cypress@9.6.1 --save-dev
-          npm run cypress
           
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1

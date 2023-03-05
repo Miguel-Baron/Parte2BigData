@@ -41,6 +41,6 @@ jobs:
           aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
 
-      - name: zappa
-        run: |
-          zappa update
+     # - name: zappa
+     #   run: |
+     #     zappa update

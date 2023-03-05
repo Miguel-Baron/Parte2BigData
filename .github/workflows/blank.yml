@@ -29,7 +29,6 @@ jobs:
           python-version: '3.8'
           
       - name: install requirements
-        working-directory: web/e2e
         run: |
           pip install -r requirements.txt
           npm ci
@@ -44,7 +43,6 @@ jobs:
           ls -lrt
       - name: Cypress run
     # uses: cypress-io/github-action@v2
-        working-directory: web/e2e
         run: |
           npm install cypress@9.6.1 --save-dev
           npm run cypress
